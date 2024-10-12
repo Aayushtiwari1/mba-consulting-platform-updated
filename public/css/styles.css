@@ -1,50 +1,150 @@
+/* General Style */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
+/* Header and Main Title */
+h1 {
     text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-nav ul {
+/* Navigation Bar */
+nav {
+    text-align: center;
+    background-color: #34495e;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* Section Headings */
+h2 {
+    color: #2980b9;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Services Section */
+#services ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-main {
-    padding: 2rem;
-}
-
-form {
+    text-align: center;
     margin-top: 20px;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
+#services ul li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+#services ul li:last-child {
+    border-bottom: none;
 }
 
+/* About Us and Contact Us Sections */
+section {
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about, #contact {
+    background-color: #fff;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Contact List Styling */
+#contact ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer a {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #1abc9c;
+}
+
+/* Button Styles */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }
