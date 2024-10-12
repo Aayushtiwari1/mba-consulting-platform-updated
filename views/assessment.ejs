@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assessment Page</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Student Profile</a></li>
+                <li><a href="/client">Post Project</a></li>
+                <li><a href="/faculty_review">Faculty Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Your Assessment</h2>
+        <form action="/assessment/submit" method="POST">
+            <label for="question1">Question 1:</label>
+            <input type="text" name="question1" required>
+
+            <label for="question2">Question 2:</label>
+            <input type="text" name="question2" required>
+
+            <label for="question3">Question 3:</label>
+            <input type="text" name="question3" required>
+
+            <button type="submit">Submit Assessment</button>
+        </form>
+    </main>
+</body>
+</html>
