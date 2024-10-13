@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
 }
@@ -12,7 +12,7 @@ body {
 h1 {
     text-align: center;
     color: #2c3e50;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -20,43 +20,55 @@ h1 {
 /* Navigation Bar */
 nav {
     text-align: center;
-    background-color: #34495e;
+    background-color: #007bff;
     padding: 15px 0;
-    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: #ecf0f1;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-size: 1.2rem;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
     color: #1abc9c;
+    transform: scale(1.1);
 }
 
 /* Section Headings */
 h2 {
     color: #2980b9;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Services Section */
+#services {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 #services ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    margin-top: 20px;
 }
 
 #services ul li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eaeaea;
 }
 
 #services ul li:last-child {
@@ -74,7 +86,7 @@ section {
 }
 
 #about, #contact {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 p, ul {
@@ -116,18 +128,29 @@ footer a:hover {
 /* Button Styles */
 button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     margin-top: 20px;
 }
 
 button:hover {
     background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 /* Responsive Design */
@@ -145,6 +168,11 @@ button:hover {
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.1rem;
     }
 }
